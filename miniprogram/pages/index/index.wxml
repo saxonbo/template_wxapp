@@ -1,0 +1,11 @@
+<nav-bar show-back="{{false}}" custom-class="nav-bar" title="首页"></nav-bar>
+<swiper indicator-dots="{{banner_flag.length>1}}" autoplay="{{true}}" circular="{{true}}" vertical="{{false}}" interval="2000" duration="500" previous-margin="0px" next-margin="0px" class="header-img" indicator-active-color="#fff">
+  <block wx:for="{{banner_flag}}" wx:key="item">
+    <swiper-item>
+      <image class="swiper-item" src="{{item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="btn">
+  <van-button type="primary" open-type="getPhoneNumber" bind:getphonenumber="getphonenumber">登录</van-button>
+</view>

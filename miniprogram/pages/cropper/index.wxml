@@ -1,0 +1,9 @@
+<import src="../../components/we-cropper/we-cropper" />
+
+<view class="cropper-wrapper">
+  <template is="we-cropper" data="{{...cropperOpt}}" />
+  <view class="cropper-btns" style="color: {{cropperOpt.boundStyle.color}}">
+    <view class="cancle-btn" bindtap="handleBack">返 回</view>
+    <view class="confirm-btn" bindtap="getCropperImage">确 认</view>
+  </view>
+</view>
